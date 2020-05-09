@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "910075194371",
+    "firebase_url": "https://videocall-be450.firebaseio.com",
+    "project_id": "videocall-be450",
+    "storage_bucket": "videocall-be450.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910075194371:android:7f95d1f51c2cd76acfb236",
+        "android_client_info": {
+          "package_name": "com.saswat.videocall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910075194371-je34a2e7ml9hnlhcrs9vpgdvahrpo5c5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxhpsIXP6KQK6CLbuIFqIm1m6D6N9H6hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910075194371-je34a2e7ml9hnlhcrs9vpgdvahrpo5c5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

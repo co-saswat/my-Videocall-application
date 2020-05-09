@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="25dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
+
+    <RelativeLayout
+        android:id="@+id/card_view_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/friends_list_notitfy"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile_image"
+            android:foreground="@drawable/btn_round"
+            android:foregroundTint="#ffffff"
+            android:layout_marginTop="10dp"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notify_user_name"
+            android:text="User Name:"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/friends_list_notitfy"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aladin">
+
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_notify_friend_list_accept"
+            android:layout_below="@id/notify_user_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/accept_btn"
+            android:text="Accept"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aladin"
+            android:textSize="25dp"
+            android:visibility="gone"
+            >
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_notify_friend_list_reject"
+            android:layout_below="@id/btn_notify_friend_list_accept"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/reject_btn"
+            android:text="Reject"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aladin"
+            android:textSize="25dp"
+            android:visibility="gone"
+            >
+        </Button>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

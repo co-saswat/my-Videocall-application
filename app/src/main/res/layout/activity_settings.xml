@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050B2C"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+        android:id="@+id/setting_profile"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/profile_image"
+        android:foreground="@drawable/btn_round"
+        />
+    <EditText
+        android:id="@+id/settings_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/edit_profile"
+        android:drawableTint="#ffffff"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/aladin"
+        android:hint="Write Your Name"
+        android:textColorHint="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#ffffff"
+        android:layout_below="@id/setting_profile"
+        />
+    <EditText
+        android:id="@+id/bio_staus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/edit_status"
+        android:drawableTint="#ffffff"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/aladin"
+        android:hint="Write Your Status"
+        android:textColorHint="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#ffffff"
+        android:layout_below="@id/settings_username"
+        />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_save"
+        android:layout_below="@id/bio_staus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_next_round"
+        android:textSize="20dp"
+        android:text="Save"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/aladin"/>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindpeopleActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/find_people_contact_list"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/find_people_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/findpeople_search_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Search Here..."
+                    android:textSize="25dp"
+                    android:drawableRight="@drawable/ic_search_black_24dp"
+                    android:fontFamily="@font/aladin"
+                    android:layout_marginEnd="20dp"
+                    android:textColorHint="#ffffff"
+                    android:drawableTint="@color/common_google_signin_btn_text_dark_default"
+                    >
+                </EditText>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_people_contact_list"
+        android:id="@+id/findpeople_contacts_list"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

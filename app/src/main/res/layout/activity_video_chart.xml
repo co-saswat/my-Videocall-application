@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoChartActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <FrameLayout
+            android:id="@+id/subscriber_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            >
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:id="@+id/publisher_container"
+                android:layout_gravity="top|end"
+                android:layout_margin="15dp"
+                android:background="@color/colorPrimary"
+                >
+
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+    
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/end_call_btn"
+        android:src="@drawable/cancel_call"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+
+    </ImageView>
+
+</RelativeLayout>

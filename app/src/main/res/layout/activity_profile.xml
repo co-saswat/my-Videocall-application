@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_image_picture"
+        android:src="@drawable/profile_image"
+        android:foreground="@drawable/btn_round"
+        android:foregroundTint="#ffff"
+        android:scaleType="centerInside"
+        >
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_image_picture"
+        android:id="@+id/user_profile_name"
+        android:text="UserName"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:fontFamily="@font/aladin"
+        android:textStyle="bold"
+        android:textColor="#000000">
+    </TextView>
+
+    <Button
+        android:id="@+id/add_friend"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/capriola"
+        android:text="Add Friend"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:background="@drawable/accept_btn"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/cancel_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/capriola"
+        android:text="Cannel Friend"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:background="@drawable/reject_btn"
+        >
+
+    </Button>
+</RelativeLayout>

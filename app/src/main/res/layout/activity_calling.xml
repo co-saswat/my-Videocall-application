@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallingActivity">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scaleType="centerCrop"
+       android:id="@+id/user_profile_calling"
+       android:src="@drawable/profile_image"
+       >
+   </ImageView>
+
+    <TextView
+        android:id="@+id/caller_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="30dp"
+        android:fontFamily="@font/capriola"
+        android:maxLines="5"
+        android:gravity="center"
+        android:layout_above="@id/txt">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calling..."
+        android:textSize="30dp"
+        android:fontFamily="@font/capriola"
+        android:maxLines="5"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_above="@id/linear_layout_user">
+
+    </TextView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear_layout_user"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:src="@drawable/make_call"
+            android:layout_marginRight="120dp"
+            android:id="@+id/make_a_call"
+            android:visibility="gone">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:src="@drawable/cancel_call"
+            android:id="@+id/cancel_a_call">
+
+        </ImageView>
+    </LinearLayout>
+
+</RelativeLayout>
